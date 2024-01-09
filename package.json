@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "generar-reporte": "allure generate allure-results -o allure-report --clean",
-        "test": "cypress open"
+        "generar-reporte": "allure generate allure-results -o allure-report --clean"
     },
     "keywords": [],
     "author": "",
