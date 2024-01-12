@@ -1,3 +1,5 @@
+import '@shelex/cypress-allure-plugin';
+require('@shelex/cypress-allure-plugin');
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
