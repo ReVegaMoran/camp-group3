@@ -1,25 +1,25 @@
-export class textBoxElements {
-    static get textBoxes() {
+export class modalDialogsElements {
+    static get modalDialogs() {
         return {
-            get fullName() {
-                return cy.get('#userName');
+            get x() {
+                return cy.contains('span', '×');
             },
-            get userEmail() {
-                return cy.get('#userEmail');
-            },
-            get currentAddress() {
-                return cy.get('#currentAddress');
-            },
-            get permanentAddress() {
-                return cy.get('#permanentAddress');
+            get showLargeModal() {
+                return cy.get('#showLargeModal');
             },
         };
     }
 
     static get buttons() {
         return {
-            get submit() {
-                return cy.get('#submit');
+            get showSmallModal() {
+                return cy.get('#showSmallModal');
+            },
+            get showLargeModal() {
+                return cy.get('#showLargeModal');
+            },
+            get closeSmallModal() {
+                return cy.get('#closeSmallModal');
             },
         }
     }
