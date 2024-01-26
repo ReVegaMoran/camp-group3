@@ -1,12 +1,12 @@
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const { defineConfig } = require("cypress");
 
-
 module.exports = defineConfig({
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+
     e2e: {
-        setupNodeEvents(on, config) {
-            allureWriter(on, config);
-            return config;
-        },
+        setupNodeEvents(on, config) {},
+        baseUrl: "https://demoqa.com",
+        specPattern: "./cypress/e2e/**/*.spec.js",
     },
 });
